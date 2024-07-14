@@ -1,0 +1,61 @@
+@import 'reset';
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+     url('../fonts/Montserrat-Regular.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+     url('../fonts/Montserrat-Medium.woff') format('woff');
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-SemiBold.woff2') format('woff2'),
+     url('../fonts/Montserrat-SemiBold.woff') format('woff');
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+     url('../fonts/Montserrat-Bold.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'CraftworkGrotesk';
+  src: url('../fonts/CraftworkGrotesk-Regular.woff2') format('woff2'),
+     url('../fonts/CraftworkGrotesk-Regular.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'CraftworkGrotesk';
+  src: url('../fonts/CraftworkGrotesk-Medium.woff2') format('woff2'),
+     url('../fonts/CraftworkGrotesk-Medium.woff') format('woff');
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'CraftworkGrotesk';
+  src: url('../fonts/CraftworkGrotesk-SemiBold.woff2') format('woff2'),
+     url('../fonts/CraftworkGrotesk-SemiBold.woff') format('woff');
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'CraftworkGrotesk';
+  src: url('../fonts/CraftworkGrotesk-Bold.woff2') format('woff2'),
+     url('../fonts/CraftworkGrotesk-Bold.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
+}
+
+
+@import 'media';
