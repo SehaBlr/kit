@@ -1,6 +1,7 @@
 @media(max-width:1650px) {
     .header {
         border-radius: 0 0 20px 20px;
+
         &__inner {
             display: grid;
             grid-template-columns: 1fr 189px 296px;
@@ -21,6 +22,36 @@
         &__button-list {
             gap: 8px;
         }
+        &__burger-menu-inner{
+          grid-template-columns: 238px 238px 212px; 
+          grid-template-rows: 1fr 130px 30px 30px;
+          justify-content: space-between;
+          align-items: center;
+          margin: 0 auto;
+          width: 688px;
+        }
+        &__left-menu-list {
+          grid-column: 1/2;
+        }
+        &__burder-timework {
+          grid-column: 1/2;
+          grid-row: 4/5;
+        }
+        &__social-list {
+          grid-column: 2/3;
+          grid-row: 3/4;
+        }
+        &__address {
+          grid-column: 3 / 4;
+          grid-row: 3 / 4;
+          font-size: 14px;
+          line-height: 1.4;
+          font-weight: 400;
+          color: #747992;
+        }
+        &__burger-search {
+          display: none;
+        }
     }
 }
 
@@ -36,13 +67,16 @@
 
         &__logo {
             height: 44px;
-          }
+        }
+
         &__menu {
             display: none;
         }
-        &__phone{
+
+        &__phone {
             display: none;
         }
+
         &__button {
             &_visit {
                 display: none;
@@ -59,20 +93,20 @@
             height: 44px;
             background-size: cover;
             background-repeat: no-repeat;
-        
-          }
-        
-          &__burger {
+
+        }
+
+        &__burger {
             background-image: url("../images/burger.svg");
             width: 44px;
             height: 44px;
             background-size: cover;
             background-repeat: no-repeat;
-        
+
             &:hover {
-              background-image: url("../images/burger-hv.svg");
+                background-image: url("../images/burger-hv.svg");
             }
-        
-          }
+
+        }
     }
 }
