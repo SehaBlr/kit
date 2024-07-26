@@ -394,15 +394,6 @@ main {
 }
 
 
-.chevron {
-  background-image: url("../images/chevron.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 6px;
-  width: 9px;
-  margin-top: 4px;
-  display: block;
-}
 
 
 
@@ -502,6 +493,20 @@ main {
     font-weight: 400;
     line-height: 0.7;
     color: #8a8a8a;
+    position: relative;
+    cursor: pointer;  
+    &::after{
+      content: "";
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 28px;
+      background-image: url("../images/chevron-white.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 9px;
+      width: 16px;
+    }
 
   }
   &__menu-services {
@@ -533,6 +538,20 @@ main {
     font-weight: 400;
     line-height: 6.2;
     color: #8a8a8a;
+    position: relative;
+    cursor: pointer;  
+    &::after{
+      content: "";
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 28px;
+      background-image: url("../images/chevron-white.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 9px;
+      width: 16px;
+    }
   }
   &__menu-info {
     grid-column: 3/4;
@@ -560,5 +579,24 @@ main {
 }
 
 
+.chevron {
+  background-image: url("../images/chevron.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 6px;
+  width: 9px;
+  margin-top: 4px;
+  display: block;
+}
+
+.chevron-white {
+  background-image: url("../images/chevron-white.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 9px;
+  width: 16px;
+  margin-top: 4px;
+  display: block;
+}
 
 @import 'media';

@@ -59,6 +59,106 @@
       display: none;
     }
   }
+  .footer {
+    &__inner {
+      padding-top: 39px;
+      display: grid;
+      grid-template-columns: 248px 248px 1fr;
+      grid-template-rows: 36px 119px 39px 50px 58px 16px 155px 50px 40px;
+    }
+    &__phone {
+      font-size: 21px;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+    &__timework {
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 1.35;
+      color: #999;
+      opacity: 0.7;
+    }
+    &__address {  
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 1.35;
+      color: #999;
+      opacity: 0.7;
+    }
+    &__button {
+      padding: 11px 30px;
+      width: 200px;
+      height: 40px;
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+    &__social-list {  
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+      gap: 6px;
+      padding-bottom: 14px;
+    }
+    &__social-link {
+      height: 40px;
+      width: 40px;
+      background-size:50%;  
+      background-position:center center;
+    }
+    &__services{
+      grid-column: 2/4;
+      font-size: 15px;
+      line-height: 1.8;
+  
+    }
+    &__menu-services {
+      grid-column: 2/4;
+      grid-row: 2/6;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      max-height: 230px;
+      :nth-child(n+15){
+        display: none;
+      }
+    }
+    &__list-item {
+      width: 52%;
+    }
+    &__link {
+      font-size: 14px;
+    }
+    &__info{
+      grid-column: 2/4;
+      grid-row: 5/6;
+      font-size: 15px;
+      line-height: 7;
+    }
+    &__menu-info {
+      grid-column: 2/4;
+      grid-row: 7/8;
+      :nth-child(n+11){
+        display: none;
+      }
+    }
+    &__copyright {
+      grid-column: 1/3;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 1.3;
+      color: #999;
+      opacity: 0.7;
+    }
+    &__confidence {
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 1.3;
+      color: #999;
+      opacity: 0.7;
+    }
+  }
+  
 }
 
 @media(max-width:768px) {
@@ -260,4 +360,113 @@
       }
     }
   }
+  
+.footer {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 23px;
+  }
+  &__logo {
+  }
+  &__services{
+    margin-top: 24px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.7;
+    color: #fff;
+    &::after{
+      display: block;
+      transition: .3s ease-in-out;
+    }
+    &_expanded{ 
+      &::after{     
+        transform: rotate(180deg);
+      }
+    }
+  }
+  &__services_expanded + &__menu-services {
+    display: flex;
+    padding-bottom: 10px;
+  }
+  &__menu-services {
+    display: none;
+    flex-direction: column;
+    max-height: 320px;
+    :nth-child(n+15){
+      display: block;
+    }
+  }
+  &__info{
+    border-top: #333 solid 1px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.7;
+    color: #fff; 
+    &::after{
+      display: block;
+      transition: .3s ease-in-out;
+    }
+    &_expanded{ 
+      &::after{     
+        transform: rotate(180deg);
+      }
+    }
+  }
+  &__info_expanded + &__menu-info {
+    display: flex;
+  }
+  &__menu-info {
+    display: none;
+    flex-direction: column;
+    padding-bottom: 10px;
+    max-height: 190px;
+  }
+  &__phone {
+    border-top: #333 solid 1px;
+    padding-top: 34px;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.4;
+  }
+  &__timework {
+    margin-top: 13px;
+  }
+  &__address {  
+    margin-top: 9px;
+  }
+  &__button {
+    display: none;
+  }
+  &__social-list { 
+    margin-top: 24px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 8px;
+    padding-bottom: 34px;
+  }
+  &__social-item {
+  }
+  &__social-link {
+    height: 50px;
+    width: 50px;
+  }
+  &__list-item {
+  }
+  &__link {
+  }
+  &__confidence {
+  }
+  &__copyright {
+    margin-top: 19px;
+
+  }
+}
+
 }
