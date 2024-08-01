@@ -1,4 +1,6 @@
 @import 'reset';
+@import '../../node_modules/swiper/swiper-bundle';
+
 
 @font-face {
   font-family: 'Montserrat';
@@ -262,6 +264,7 @@ main {
   
   &__burger-menu { 
     position: absolute;
+    z-index: 60;
     top: 0;
     left: 0;
     width: 100%;
@@ -392,10 +395,6 @@ main {
 
 
 }
-
-
-
-
 
 .footer {
   background-color: #222;
@@ -577,6 +576,124 @@ main {
     color: #8a8a8a;
   }
 }
+
+.slider {
+  position: relative;
+  background-color: #dde5e5;
+  border-radius: 0 0 50px 50px;
+  height: 770px;
+  &__inner{
+    height: 770px;
+  }
+  &__slide {
+    position: relative;
+    display: flex;
+  }
+  &__image {
+    margin-left: -32px;
+  }
+  &__content {
+    z-index: 20;
+    position: relative;
+    margin-top: 160px;
+    width: 543px;
+    height: 432px;
+    border-radius: 50px;
+    background-color: #fff;
+    padding: 30px;
+  }
+  &__title {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 1;
+    color:#111;
+    margin-top: 34px;
+  }
+  &__text {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.4;
+    color:#818494;
+    margin-top: 37px;
+  }
+  &__image{
+    z-index: 2;
+    position: absolute;
+    bottom: -7px;
+    right: 0;
+  }
+  &__button {
+    position: absolute;
+    bottom: 33px;
+    left: 31px;
+    border-radius: 40px;
+    display: inline-block;
+    text-align: start;
+    height: 25px;
+    width: 295px;
+    padding: 15px 17px;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #fff;
+    transition: all .3s;  
+    background-color: #06bab5;
+    &::after {
+      content: "";
+      position: absolute;
+      right: 20px;
+      top: 21px;
+      background-image: url("../images/btn-arrow.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 12px;
+      width: 28px;
+    }
+    &:hover {
+      border-color: #111;      
+      background-color: #111;
+      color: #fff;
+    }
+  }
+  &__pagination {
+    & .swiper-pagination-bullet {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #fff;
+      opacity: 1;
+      &-active{        
+        width: 10px;
+        height: 10px;
+      }
+      & .swiper-pagination-horizontal{
+        bottom: 8px;
+      }
+    }
+  }
+  &__whatsapp {
+    z-index: 20;
+    width: 60px;
+    height: 60px;
+    background-image: url(../images/whatsapp.svg);
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+  }
+}
+.swiper-pagination-bullet-active {
+  background-color: #fff;
+}
+
+.swiper-pagination {      
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+}
+
 
 
 .chevron {

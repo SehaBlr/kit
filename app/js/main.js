@@ -34,3 +34,18 @@ footerInfo.addEventListener('click', () => {
         footerInfo.classList.add('footer__info_expanded');
     }
 })
+
+
+const swiper = new Swiper('.swiper', {
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true
+    },
+    autoplay: {
+        delay: 500000,
+      },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
