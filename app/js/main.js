@@ -3,6 +3,8 @@ let burgerEscape = document.querySelector('.header__escape');
 let burgerMenu = document.querySelector('.header__burger-menu'); 
 let footerServises = document.querySelector('.footer__services'); 
 let footerInfo = document.querySelector('.footer__info'); 
+let services = document.querySelector('.services__swiper');
+let currentContainer;
 
 burger.addEventListener('click', () => {
     if (burger.classList.contains('header__burger_active')) {
@@ -36,16 +38,58 @@ footerInfo.addEventListener('click', () => {
 })
 
 
-const swiper = new Swiper('.swiper', {
+const swiper2 = new Swiper('.slider__inner', {
     effect: "fade",
     fadeEffect: {
       crossFade: true
     },
     autoplay: {
-        delay: 500000,
+        delay: 5000,
       },
     pagination: {
-      el: '.swiper-pagination',
+      el: '.slider__pagination',
       clickable: true,
     },
   });
+
+
+  
+var swiper = new Swiper('.services__swiper', {
+    slidesPerView:4,
+    spaceBetween: 18,
+    breakpoints: {
+      375: {
+        slidesPerView: 2,
+        spaceBetween: 11,
+        grid: {
+          column: 2,
+          rows: 3,
+        },
+      },
+      726: {
+        slidesPerView: 3,
+        spaceBetween: 16,
+        grid: {
+          column: 3,
+          rows: 2,
+        },
+      },
+      1650: {
+        slidesPerView: 4,
+        spaceBetween: 18, 
+        grid: {
+          column: 4,
+          rows: 2,
+        },
+      },
+    },
+      grid: {
+        column: 4,
+        rows: 2,
+      },
+    pagination: {
+      el: '.services__swiper-pagination',
+      clickable: true,
+    },
+  });
+ 

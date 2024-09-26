@@ -1,7 +1,7 @@
 {
   "name": "gulp-start",
   "version": "1.0.0",
-  "description": "",
+  "description": "Вёрстка под портфолио\r https://sehablr.github.io/kit/",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -28,5 +28,8 @@
   },
   "dependencies": {
     "swiper": "^11.1.4"
+  },
+  "directories": {
+    "doc": "docs"
   }
 }
