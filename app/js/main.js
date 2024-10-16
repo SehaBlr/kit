@@ -55,41 +55,79 @@ const swiper2 = new Swiper('.slider__inner', {
 
   
 var swiper = new Swiper('.services__swiper', {
-    slidesPerView:4,
-    spaceBetween: 18,
-    breakpoints: {
-      375: {
-        slidesPerView: 2,
-        spaceBetween: 11,
-        grid: {
-          column: 2,
-          rows: 3,
-        },
-      },
-      726: {
-        slidesPerView: 3,
-        spaceBetween: 16,
-        grid: {
-          column: 3,
-          rows: 2,
-        },
-      },
-      1650: {
-        slidesPerView: 4,
-        spaceBetween: 18, 
-        grid: {
-          column: 4,
-          rows: 2,
-        },
+  slidesPerView:4,
+  spaceBetween: 18,
+  breakpoints: {
+    375: {
+      slidesPerView: 2,
+      spaceBetween: 11,
+      grid: {
+        column: 2,
+        rows: 3,
       },
     },
+    726: {
+      slidesPerView: 3,
+      spaceBetween: 16,
+      grid: {
+        column: 3,
+        rows: 2,
+      },
+    },
+    1650: {
+      slidesPerView: 4,
+      spaceBetween: 18, 
       grid: {
         column: 4,
         rows: 2,
       },
-    pagination: {
-      el: '.services__swiper-pagination',
-      clickable: true,
     },
-  });
+  },
+    grid: {
+      column: 4,
+      rows: 2,
+    },
+  pagination: {
+    el: '.services__swiper-pagination',
+    clickable: true,
+  },
+});
  
+var swiper3 = new Swiper('.employee__cards', {
+  slidesPerView:4,
+  spaceBetween: 18,
+  breakpoints: {
+    375: {
+      slidesPerView: 2,
+      spaceBetween: 11,
+      grid: {
+        column: 2,
+        rows: 2,
+      },
+    },   
+    726: {
+      slidesPerView: 3,
+      spaceBetween: 16,
+      grid: {
+        column: 3,
+        rows: 2,
+      },
+    },
+    1650: {
+      slidesPerView: 4,
+      spaceBetween: 18, 
+      grid: {
+        column: 4,
+        rows: 2,
+      },
+    },
+  },
+  grid: {
+    column: 4,
+    rows: 2,
+  },
+  pagination: {
+    el: '.employee__pagination',
+    clickable: true,
+  },
+});

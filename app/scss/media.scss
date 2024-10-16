@@ -283,6 +283,8 @@
       gap: 15px;
       flex-wrap: wrap;
       margin-top: 20px;
+      height: 730px;
+      padding-bottom: 24px;
     }
     &__card {
       width: 232px;
@@ -300,9 +302,6 @@
           }
         }
       }
-      &:nth-child(n+7){
-        display: none;
-      }
     }
     &__btn-all{
       border: 1px solid #06bab5;
@@ -318,7 +317,7 @@
       margin: 18px 16px;
     }
     &__card-img {  
-      height: 346px;
+      height: 345px;
     }
     &__card-info {
       border-radius: 15px;
@@ -370,6 +369,22 @@
       height: 35px;
       font-size: 13px;
       margin-top: 15px;
+    }
+    &__pagination { 
+      gap: 6px;
+      margin-top: 10px;
+      & .swiper-pagination-bullet {
+        width: 6px;
+        height: 6px;
+        &-active{        
+          width: 6px;
+          height: 6px;
+        }
+        & .swiper-pagination-horizontal{
+          bottom: 6px;
+        }
+      }
+
     }
   }
 }
@@ -755,6 +770,10 @@
     }
   }
   .services {  
+    &__inner{
+      width: 376px;
+      padding: 0 12px;
+    }
     &__title{
       margin-top: 45px;
     }
@@ -809,13 +828,14 @@
           bottom: 6px;
         }
       }
-
     }
   }  
   .employee {
-    &__inner {
+    &__inner { 
+     
+      width: 376px;
       margin-top: -53px;
-      padding: 20px 0;
+      padding: 20px 12px;
     }
     &__title {
       font-size: 30px;
@@ -824,6 +844,8 @@
     &__cards {
       gap: 11px;
       margin-top: 12px;
+      height: 636px;
+      padding-bottom: 24px;
     }
     &__card {
       border-radius: 0px;
@@ -837,10 +859,6 @@
       &_more{        
         display: none;
       }
-      &:nth-child(n+5){
-        display: none;
-      }
-
     }
     &__btn-all{
       display: none;
@@ -877,13 +895,11 @@
       background-color: #fff;
       bottom: 0px;
       left: 0px;
-      text-align-last: left;
     }
     &__card-name {
       font-size: 16px;
       margin: 13px 0 0;
       width: 170px;
-      text-align-last: left;
     }
     &__card-speciality {
       font-size: 13px;
@@ -903,7 +919,6 @@
       line-height: 1.17;
       color: #06bab5;
       margin-top: 20px;
-      text-align-last: left;
       &:hover{
         border:none;
         background: url(../images/btn-all-hv.svg) no-repeat 296px 17px;
@@ -911,6 +926,21 @@
         color: #fff;
       }
 
+    }
+    &__pagination { 
+      gap: 3px;
+      margin-top: 12px;
+      & .swiper-pagination-bullet {
+        width: 6px;
+        height: 6px;
+        &-active{        
+          width: 6px;
+          height: 6px;
+        }
+        & .swiper-pagination-horizontal{
+          bottom: 6px;
+        }
+      }
     }
   }
 }

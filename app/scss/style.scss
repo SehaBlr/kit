@@ -838,9 +838,11 @@ main {
   }
   &__cards {
     display: flex;
-    gap: 17px;
     flex-wrap: wrap;
-    margin-top: 32px;
+    margin-top: 32px;    
+    width: 100%;
+    height: 1178px;    
+    padding-bottom: 40px;
   }
   &__card {
     border-radius: 15px;
@@ -848,12 +850,14 @@ main {
     height: 560px;
     background-color: #d1e2e2;
     position: relative;
+    box-sizing: border-box;
     &:hover .employee__schedule{
       display: flex;
     }
     &_more{
       border: 2px solid #06bab5;
       background-color: #fff;
+      text-align: left;
       &:hover{
         border: none;
         background-color: #06bab5;
@@ -869,10 +873,31 @@ main {
         }
       }
     }
-    &:nth-child(n+9){
-      display: none;
+  }  
+  &__pagination {  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+    margin-top: 20px;
+    & .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #CFE8E6;
+      opacity: 1;
+      &-active{        
+        width: 10px;
+        height: 10px;
+      }
+      & .swiper-pagination-horizontal{
+        bottom: 10px;
+      }
     }
-
+    & .swiper-pagination-bullet-active {
+      background-color: #06bab5;
+    }
   }
   &__btn-all{
     display: block;
@@ -884,7 +909,6 @@ main {
     bottom: 22px;
     right: 22px;
     background: url(../images/btn-all.svg) no-repeat center center;
-
   }
   &__card-title { 
     font-weight: 500;
@@ -892,19 +916,17 @@ main {
     line-height: 1.1;
     color: #06bab5;
     margin: 27px 29px;
-
   }
   &__card-img {    
     display: flex; 
     justify-content: center;
     align-items: end; 
-
     width: 100%; 
     height: 560px; 
-    & img{
-      
-      max-width: 100%; /* Максимальная ширина изображения 100% от ширины блока */
-      max-height: 100%; /* Максимальная высота изображения 100% от высоты блока */
+    & img{      
+      max-width: 100%;
+      max-height: 100%;      
+      border-radius: 15px;
       height: auto; 
     }
   }
@@ -924,6 +946,7 @@ main {
     color: #111;
     margin: 17px 20px;
     width: 247px;
+    text-align: left;
   }
   &__card-speciality {
     font-size: 17px;
@@ -931,6 +954,7 @@ main {
     color: #8e93aa;
     font-weight: 500;
     margin: 17px 20px;
+    text-align: left;
   }
   &__schedule {
     display: none;
@@ -980,7 +1004,6 @@ main {
     width: 167px;
     height: 40px;
     padding: 8px;
-
     &_disabled {
       background-color: #06bab5;
       border: 1px solid #11c7c2;
