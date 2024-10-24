@@ -3,7 +3,6 @@ let burgerEscape = document.querySelector('.header__escape');
 let burgerMenu = document.querySelector('.header__burger-menu'); 
 let footerServises = document.querySelector('.footer__services'); 
 let footerInfo = document.querySelector('.footer__info'); 
-let services = document.querySelector('.services__swiper');
 let currentContainer;
 
 burger.addEventListener('click', () => {
@@ -28,7 +27,6 @@ footerServises.addEventListener('click', () => {
         footerServises.classList.add('footer__services_expanded');
     }
 })
-
 footerInfo.addEventListener('click', () => {
     if (footerInfo.classList.contains('footer__info_expanded')) {
         footerInfo.classList.remove('footer__info_expanded');
@@ -36,7 +34,6 @@ footerInfo.addEventListener('click', () => {
         footerInfo.classList.add('footer__info_expanded');
     }
 })
-
 
 const swiper2 = new Swiper('.slider__inner', {
     effect: "fade",
@@ -93,7 +90,7 @@ var swiper = new Swiper('.services__swiper', {
   },
 });
  
-var swiper3 = new Swiper('.employee__cards', {
+var employee = new Swiper('.employee__cards', {
   slidesPerView:4,
   spaceBetween: 18,
   breakpoints: {
@@ -129,5 +126,49 @@ var swiper3 = new Swiper('.employee__cards', {
   pagination: {
     el: '.employee__pagination',
     clickable: true,
+  },
+}); 
+
+
+var recomended = new Swiper('.recomended__cards', {
+  slidesPerView:2,
+  spaceBetween: 25,
+  breakpoints: {
+    375: {
+      slidesPerView: 1,
+      spaceBetween: 11,
+      grid: {
+        column: 1,
+        rows: 1,
+      },
+    },   
+    726: {
+      slidesPerView: 2,
+      spaceBetween: 16,
+      grid: {
+        column: 2,
+        rows: 1,
+      },
+    },
+    1650: {
+      slidesPerView: 2,
+      spaceBetween: 16, 
+      grid: {
+        column: 2,
+        rows: 2,
+      },
+    },
+  },
+  grid: {
+    column: 2,
+    rows: 2,
+  },
+  pagination: {
+    el: '.recomended__pagination',
+    clickable: true,
+  },
+   navigation: {
+    nextEl: ".recomended__button-next",
+    prevEl: ".recomended__button-prev",
   },
 });
