@@ -172,3 +172,46 @@ var recomended = new Swiper('.recomended__cards', {
     prevEl: ".recomended__button-prev",
   },
 });
+
+var news = new Swiper('.news__cards', {
+  slidesPerView:3,
+  spaceBetween: 19,
+  breakpoints: {
+    375: {
+      slidesPerView: 1,
+      spaceBetween: 11,
+      grid: {
+        column: 1,
+        rows: 1,
+      },
+    },   
+    726: {
+      slidesPerView: 2,
+      spaceBetween: 16,
+      grid: {
+        column: 2,
+        rows: 1,
+      },
+    },
+    1650: {
+      slidesPerView: 3,
+      spaceBetween: 19, 
+      grid: {
+        column: 3,
+        rows: 1,
+      },
+    },
+  },
+  grid: {
+    column: 3,
+    rows: 1,
+  },
+  pagination: {
+    el: '.news__pagination',
+    clickable: true,
+  },
+   navigation: {
+    nextEl: ".news__button-next",
+    prevEl: ".news__button-prev",
+  },
+});

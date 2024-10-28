@@ -1165,6 +1165,142 @@ main {
   }
 }
 
+.news {
+  &__inner {
+    padding-bottom: 20px;
+    position: relative;}
+  &__title {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1.1;
+    text-align: center;
+    color: #111;
+    margin-top: 37px;
+  }
+  &__cards {    
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 32px;    
+    width: 100%;
+    height: 560px;    
+    padding-bottom: 40px;
+  }
+  &__card {}
+  &__image-container {
+    width: 522px;
+    height: 300px;
+    overflow: hidden; 
+    border-radius: 20px;
+    position: relative;
+    margin-bottom: 20px;
+  }   
+  &__img-wrapper {    
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    & picture{
+      max-width: 100%;
+      max-height: 100%;
+      height: auto;
+    }
+  }
+  &__date { 
+    display: inline;   
+    border: 1px solid #06bab5;
+    border-radius: 40px;
+    height: 25px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.4;
+    color: #06bab5;
+    padding: 4px 11px;
+  }
+  &__card-title{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.3;
+    color: #111;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 85px;
+    margin-top: 17px;
+
+  }
+  &__text {    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.3;
+    color: #868a9d;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 83px;
+  }
+  &__button-next{
+    position: absolute;
+    border-radius: 40px;
+    width: 68px;
+    height: 46px;
+    border: 1px #b0b4c7 solid;
+    top: 0px;
+    right: 0px;
+    background: url(../images/btn-all-gray.svg) no-repeat center center;  
+      &:hover{
+        border-color: #06bab5;
+        background-color: #06bab5;
+        background-image: url(../images/btn-all-hv.svg) ;
+      }
+  }
+  &__button-prev{
+    position: absolute;
+    border-radius: 40px;
+    width: 68px;
+    height: 46px;
+    border: 1px #b0b4c7 solid;
+    top: 0px;
+    right: 76px;
+    background: url(../images/btn-all-gray.svg) no-repeat center center;  
+    transform: rotate(180deg);
+    &:hover{
+      border-color: #06bab5;
+      background-color: #06bab5;
+      background-image: url(../images/btn-all-hv.svg) ;
+    }
+  }
+  &__pagination {  
+    display: none;
+  }
+  &__btn-all-news { 
+    position: absolute;
+    top: 0px;
+    right: 156px;
+    border-radius: 40px;
+    height: 46px;
+    border: 1px #b0b4c7 solid;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: center;
+    color: #b0b4c7;
+    padding: 12px 22px;
+    &:hover{
+      color: #fff;
+      background-color: #06bab5;
+      border-color: #06bab5;
+    }
+  }
+}
+
 
 .chevron {
   background-image: url("../images/chevron.svg");
